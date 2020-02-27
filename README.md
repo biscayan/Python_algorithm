@@ -1,2 +1,2 @@
 # SLP
-Spoken language processing
+Spoken Language Processing
