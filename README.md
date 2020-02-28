@@ -1,4 +1,8 @@
-# Data_structure
-Implement sata structures in python
+# Data structure
+Implement data structures in python
 - Stack
 - Queue
+- Linked list
+- Binary search tree
+- AVL tree
+-
