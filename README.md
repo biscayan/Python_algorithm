@@ -1,5 +1,6 @@
-# Data structure
-Implement data structures in python
+# Data structures and algorithms
+Implement data structures and algorithms in python
+## Data structures
 - Stack
 - Queue
 - Linked list
@@ -7,3 +8,5 @@ Implement data structures in python
 - AVL tree
 - Red-black tree
 - Heap
+## Algorithms
+- Bubble sort
