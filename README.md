@@ -1,2 +1,4 @@
 # Data_structure
-Data structure in python
+Implement sata structures in python
+- Stack
+- Queue
