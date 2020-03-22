@@ -6,7 +6,7 @@ Implement data structures and algorithms in python
 - Linked list
 - Binary search tree
 - AVL tree
-- Red-black tree
 - Heap
+- Hash table
 ## Algorithms
 - Bubble sort
