@@ -4,9 +4,11 @@ Implement data structures and algorithms in python
 - Stack
 - Queue
 - Linked list
-- Binary search tree
+- Binary search tree (BST)
 - AVL tree
 - Heap
 - Hash table
+- Trie
+- Ternary search tree (TST)
 ## Algorithms
 - Bubble sort
