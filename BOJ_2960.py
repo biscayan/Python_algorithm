@@ -10,10 +10,3 @@ for i in range(2,N+1):
                 cnt+=1
                 if cnt==K:
                     print(j)
-                    
-                
-
-            
-
-
-                
