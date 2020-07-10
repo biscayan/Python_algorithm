@@ -23,7 +23,7 @@ class TST:
         if char<node.character:
             node.left_child=self.put_item(node.left_child,key,value,index)
         elif char>node.character:
-            node.right_child=self.put_item(node,right_child,key,value,index)
+            node.right_child=self.put_item(node.right_child,key,value,index)
         elif index<len(key)-1:
             node.middle_child=self.put_item(node.middle_child,key,value,index+1)
         else:
