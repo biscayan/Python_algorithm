@@ -6,9 +6,19 @@ Implement data structures and algorithms in python
 - Linked list
 - Binary search tree (BST)
 - AVL tree
+- Red-black tree
 - Heap
 - Hash table
 - Trie
 - Ternary search tree (TST)
-## Algorithms
+## Graph algorithms
+- Deep first search (DFS)
+- Breadth first search (BFS)
+- Dijkstra algorithm
+- Bellman-ford algorithm
+## Sorting algorithms
 - Bubble sort
+- Selection sort
+- Insertion sort
+- Quick sort
+- Merge sort
