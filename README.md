@@ -4,8 +4,8 @@
 - [x] Section0. 파이썬 기초 문법
 - [x] Section2. 코드 구현력 기르기
 - [x] Section3. 탐색 & 시뮬레이션
-- [ ] Section4. 이분탐색 & 그리디 알고리즘
-- [ ] Section5. 자료구조 활용
+- [x] Section4. 이분탐색 & 그리디 알고리즘
+- [x] Section5. 자료구조 활용
 - [ ] Section6. 완전탐색 기초
 - [ ] Section7. 깊이/넓이 우선 탐색 활용
 - [ ] Section8. 동적계획법
