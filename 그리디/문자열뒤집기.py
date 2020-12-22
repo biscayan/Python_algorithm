@@ -7,7 +7,7 @@ def Reverse(num_seq):
     count_zero = 0
     count_one = 0
 
-    for i in range(len(num_seq)):
+    for i in range(1,len(num_seq)):
 
         ### 10이 등장하면 1sequence 뒤집기
         if num_seq[i-1] == "1" and num_seq[i] == "0":
@@ -27,5 +27,9 @@ def Reverse(num_seq):
 
 
 if __name__ == '__main__':
-    sequence = sys.stdin.readline()
+
+    ###sys.stdin.readline()으로 데이터를 입력받으면 틓림
+    sequence = sys.stdin.readline().strip()
+    #sequence = input()
+    
     print(Reverse(sequence))
