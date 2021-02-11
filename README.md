@@ -8,5 +8,5 @@
 - [x] Section5. 자료구조 활용
 - [x] Section6. 완전탐색 기초
 - [x] Section7. 깊이/넓이 우선 탐색 활용
-- [ ] Section8. 동적계획법
+- [x] Section8. 동적계획법
 - [ ] Section9. 블록 게임 만들기
