@@ -1,7 +1,8 @@
 # 알고리즘 문제 풀이
 1. 백준 온라인 저지 (BOJ)
 2. Programmers
-3. SW expert academy
+3. SW expert academy  
+4. Leetcode
 
 ## Introduction
 네이버, 카카오, 라인, 삼성, sk 등 IT대기업에 취업을 하기 위해서는 반드시 코딩 테스트를 통과하여야 한다.  
@@ -11,9 +12,10 @@
 따라서 나의 사고력을 증진시키고, 코딩 테스트에 준비하기 위해서 알고리즘 문제들을 풀어보고자 한다.
 알고리즘 문제들은 아래 링크에서 확인을 할 수가 있다.  
 
-<https://www.acmicpc.net/>  
-<https://programmers.co.kr/>  
-<https://swexpertacademy.com/main/main.do>  
+[BOJ](https://www.acmicpc.net/)    
+[Programmers](https://programmers.co.kr/)    
+[SWEA](https://swexpertacademy.com/main/main.do)  
+[Leetcode](https://leetcode.com/)  
 
 ## 필요조건
 1. 프로그래밍 언어  
