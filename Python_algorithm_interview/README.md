@@ -8,7 +8,7 @@
 - [ ] Chapter 3. 파이썬
 - [ ] Chapter 4. 빅오, 자료형
 - [ ] Chapter 5. 리스트, 딕셔너리
-- [ ] Chapter 6. 문자열 조작
+- [x] Chapter 6. 문자열 조작
 - [ ] Chapter 7. 배열
 - [ ] Chapter 8. 연결 리스트
 - [ ] Chapter 9. 스택, 큐 
