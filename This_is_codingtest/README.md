@@ -1,6 +1,6 @@
 # This is codingtest
 나동빈 저자의 [이것이 취업을 위한 코딩 테스트다 with 파이썬](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&linkClass=&barcode=9791162243077) 의 문제를 풀고 코드를 저장한 repository이다.  
-공부는 매 챕터마다 (1) 문제유형 익히기 -> (2) 실전문제 풀기 -> (3) BOJ에서 문제 풀기로 진행하도록 하자  
+공부는 매 챕터마다 (1) 문제유형 익히기 -> (2) 실전문제 풀기 -> (3) BOJ에서 문제 풀기의 순서로 진행하도록 하자  
 ## Contents
 책의 목차는 다음과 같다.  
 ### Part 1. 코딩 테스트, 무엇을 어떻게 준비할까?
@@ -21,7 +21,6 @@
 - [x] 구현  
 (335페이지 외벽점검 미해결)
 - [x] DFS/BFS  
-(351페이지 감시피하기 미해결)  
 (355페이지 블록이동하기 미해결)  
 - [x] 정렬  
 - [x] 이진탐색  
