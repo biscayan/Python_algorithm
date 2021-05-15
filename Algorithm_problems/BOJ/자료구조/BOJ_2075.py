@@ -1,6 +1,8 @@
 import heapq
 import sys
 
+### 풀이1
+### 31100 kb, 1840 ms
 sys.stdin = open("input.txt", "r")
 
 N = int(sys.stdin.readline())
@@ -18,6 +20,19 @@ for _ in range(N-1):
 
 print(heap[0])
 
+### 풀이2
+### 29028 kb, 876 ms
+N = int(sys.stdin.readline().strip())
+
+maxis = [-1e9 for _ in range(N)]
+
+for _ in range(N):
+    nums = list(map(int,sys.stdin.readline().strip().split()))
+    nums.extend(maxis)
+    nums.sort(reverse=True)
+    maxis = nums[:N]
+
+print(maxis[-1])
 
 '''
 메모리 초과
