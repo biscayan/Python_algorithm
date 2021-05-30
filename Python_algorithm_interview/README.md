@@ -5,7 +5,7 @@
 - [x] Chapter 0. 들어가며
 - [x] Chapter 1. 코딩 인터뷰
 - [x] Chapter 2. 프로그래밍 언어 선택
-- [ ] Chapter 3. 파이썬
+- [x] Chapter 3. 파이썬
 - [ ] Chapter 4. 빅오, 자료형
 - [ ] Chapter 5. 리스트, 딕셔너리
 - [x] Chapter 6. 문자열 조작
