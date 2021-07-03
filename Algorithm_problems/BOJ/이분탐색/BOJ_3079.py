@@ -26,15 +26,11 @@ if __name__ == '__main__':
     N, M = map(int, sys.stdin.readline().split())
     num_list = list()
 
-    min_num, max_num = 100001, 0
-
     for _ in range(N):
         num = int(sys.stdin.readline())
         num_list.append(num)
-        min_num = min(min_num, num)
-        max_num = max(max_num, num)
 
-    left = min_num
-    right = max_num * M
+    left = min(num_list)
+    right = max(num_list) * M
     
     immigration(left,right)
