@@ -1,5 +1,5 @@
 # Python algorithm interview
-파이썬 알고리즘 인터뷰
+[파이썬 알고리즘 인터뷰](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791189909178&orderClick=LEa&Kc=)
 
 ## Contents
 - [x] Chapter 0. 들어가며
@@ -11,7 +11,7 @@
 - [x] Chapter 6. 문자열 조작
 - [x] Chapter 7. 배열
 - [x] Chapter 8. 연결 리스트
-- [ ] Chapter 9. 스택, 큐 
+- [x] Chapter 9. 스택, 큐 
 - [ ] Chapter 10. 데크, 우선순위 큐
 - [ ] Chapter 11. 해시 테이블
 - [ ] Chapter 12. 그래프
