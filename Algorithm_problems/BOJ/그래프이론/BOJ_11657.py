@@ -29,7 +29,4 @@ if __name__ == '__main__':
         print(-1)
     else:
         for i in range(2,N+1):
-            if time[i] != INF:
-                print(time[i])
-            else:
-                print(-1)
+            print(time[i]) if time[i] != INF else print(-1)
