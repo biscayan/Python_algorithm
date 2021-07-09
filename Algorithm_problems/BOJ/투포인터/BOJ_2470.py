@@ -4,7 +4,7 @@ sys.stdin = open("input.txt", "r")
 
 def two_liquid(liquid_list):
 
-    # The largeset possible value
+    # The largest possible value
     value = 2e9
 
     l_idx, r_idx = 0, N-1
