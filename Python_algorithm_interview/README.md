@@ -13,7 +13,7 @@
 - [x] Chapter 8. 연결 리스트
 - [x] Chapter 9. 스택, 큐 
 - [x] Chapter 10. 데크, 우선순위 큐
-- [ ] Chapter 11. 해시 테이블
+- [x] Chapter 11. 해시 테이블
 - [ ] Chapter 12. 그래프
 - [ ] Chapter 13. 최단 경로 문제
 - [ ] Chapter 14. 트리
