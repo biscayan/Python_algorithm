@@ -1,24 +1,24 @@
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from itertools import product
 
-class Solution:
-    def swapPairs(self, head: ListNode) -> ListNode:
-        root = prev = ListNode(None)
-        prev.next = head
-        
-        while head and head.next:
-            # b가 head를 가리킴
-            b = head.next
-            head.next = b.next
-            b.next = head
-            
-            # prev가 b를 가리킴
-            prev.next = b
-            
-            head = head.next
-            prev = prev.next.next
-            
-        return root.next
+def letterCombinations(digits: str):
+
+    answer = []
+
+    if digits == '':
+        return answer
+
+    mapping = {'2':['a','b','c'], '3':['d','e','f'], '4':['g','h','i'],
+                '5':['j','k','l'], '6':['m','n','o'], '7':['p','q','r','s'],
+                '8':['t','u','v'], '9':['w','x','y','z']}
+
+    alpbabet_list = []
+
+    for digit in digits:
+        alpbabet_list.append(mapping[digit])
+
+    comb_list = list(product(*alpbabet_list))
+
+    for i in range(len(comb_list)):
+        answer.append(''.join(comb_list[i]))
+
+    return answer
