@@ -19,7 +19,7 @@
 - [ ] Chapter 14. 트리
 - [ ] Chapter 15. 힙
 - [ ] Chapter 16. 트라이
-- [ ] Chapter 17. 정렬
+- [x] Chapter 17. 정렬
 - [ ] Chapter 18. 이진 검색
 - [ ] Chapter 19. 비트 조작
 - [ ] Chapter 20. 슬라이딩 윈도우
