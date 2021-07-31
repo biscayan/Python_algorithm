@@ -5,7 +5,6 @@ def solution(orders, course):
 
     # couse has nums from 2 to 10
     course_list = [[] for _ in range(11)]
-    food_combination = []
     answer = []
 
     for num in course:
@@ -14,12 +13,9 @@ def solution(orders, course):
             if len(order) >= num:
                 comb_list = list(combinations(order, num))
                 for comb in comb_list:
-                    # delete the redundancy by sorting the alphabets
-                    food_combination.append(''.join(sorted(comb)))
-
-    for foods in food_combination:
-        if len(foods) in course:
-            course_list[len(foods)].append(foods)
+                    # delete the redundancy by sorting the alphabets e.g. AB == BA
+                    food = ''.join(sorted(comb))
+                    course_list[len(food)].append(food)
 
     for course_ele in course_list:
         if course_ele != []:
