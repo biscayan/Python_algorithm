@@ -25,9 +25,12 @@ def solution(play_time, adv_time, logs):
         start_time, end_time = log[:8], log[9:]
         start_second = to_second(start_time)
         end_second = to_second(end_time)
-        for i in range(start_second, end_second):
-            total[i] += 1
-
+        total[start_second] += 1
+        total[end_second] -= 1
+    
+    for i in range(1,len(total)):
+        total[i] += total[i-1]
+        
     # accumulated
     for i in range(1,len(total)):
         total[i] += total[i-1]
