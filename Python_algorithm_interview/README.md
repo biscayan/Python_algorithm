@@ -21,7 +21,7 @@
 - [ ] Chapter 16. 트라이
 - [x] Chapter 17. 정렬
 - [x] Chapter 18. 이진 검색
-- [ ] Chapter 19. 비트 조작
+- [x] Chapter 19. 비트 조작
 - [ ] Chapter 20. 슬라이딩 윈도우
 - [ ] Chapter 21. 그리디 알고리즘
 - [ ] Chapter 22. 분할 정복
