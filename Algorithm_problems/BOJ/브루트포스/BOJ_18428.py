@@ -4,61 +4,25 @@ from itertools import combinations
 sys.stdin = open("input.txt", "r")
 
 def avoid_supervision(graph, teacher):
-
-    for t_location in teacher:
-
-        t_x, t_y = t_location[0], t_location[1]
-
-        ### 상 탐색
-        while t_x > 0:
-            t_x -= 1
-            if graph[t_x][t_y] == 'S':
-                return False
-            elif graph[t_x][t_y] == 'O':
-                break
-
-        t_x, t_y = t_location[0], t_location[1]
-        
-        ### 하 탐색
-        while t_x < N-1:
-            t_x += 1
-            if graph[t_x][t_y] == 'S':
-                return False
-            elif graph[t_x][t_y] == 'O':
-                break
-        
-        t_x, t_y = t_location[0], t_location[1]
-
-        ### 좌 탐색
-        while t_y > 0:
-            t_y -= 1
-            if graph[t_x][t_y] == 'S':
-                return False
-            elif graph[t_x][t_y] == 'O':
-                break
-        
-        t_x, t_y = t_location[0], t_location[1]
-
-        ### 우 탐색
-        while t_y < N-1:
-            t_y += 1
-            if graph[t_x][t_y] == 'S':
-                return False
-            elif graph[t_x][t_y] == 'O':
-                break
+    for tx, ty in teacher:
+        for i in range(4):
+            nx, ny = tx+dx[i], ty+dy[i]
+            while 0<=nx<N and 0<=ny<N:
+                if graph[nx][ny] == 'S':
+                    return False
+                elif graph[nx][ny] == 'O':
+                    break
+                nx, ny = nx+dx[i], ny+dy[i]
 
     return True
 
-
 if __name__ == '__main__':
-
     N = int(sys.stdin.readline())
-
-    empty, teacher = [], []
-
-    flag = False
-
     graph = [sys.stdin.readline().split() for _ in range(N)]
+
+    dx, dy = [-1,0,1,0], [0,1,0,-1]
+    empty, teacher = [], []
+    avoid = False
 
     for i in range(N):
         for j in range(N):
@@ -67,22 +31,20 @@ if __name__ == '__main__':
             elif graph[i][j] == 'T':
                 teacher.append((i, j))
 
-    block = list(combinations(empty,3))
+    blocks = list(combinations(empty,3))
 
-    for candidate in block:
+    for block in blocks:
         for i in range(3):
-            x, y = candidate[i][0], candidate[i][1]
+            x, y = block[i][0], block[i][1]
             graph[x][y] = 'O'
-
-        if avoid_supervision(graph, teacher) == True:
-            flag = True
+        if avoid_supervision(graph, teacher):
+            avoid = True
             break
-
         for i in range(3):
-            x, y = candidate[i][0], candidate[i][1]
+            x, y = block[i][0], block[i][1]
             graph[x][y] = 'X'
 
-    if flag == True:
+    if avoid:
         print("YES")
     else:
         print("NO")
