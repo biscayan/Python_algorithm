@@ -1,5 +1,3 @@
-# https://dailyheumsi.tistory.com/59 해당 게시물을 참고
-
 """
 아기 상어가 어디로 이동할지 결정하는 방법은 아래와 같다.
 
@@ -12,7 +10,6 @@
 
 import sys
 from collections import deque
-
 sys.stdin = open("input.txt", "r")
 
 def BFS(sx,sy):
@@ -24,28 +21,23 @@ def BFS(sx,sy):
     count = 0
     flag = False
 
-    queue = deque()
-    queue.append((sx,sy))
+    queue = deque([(sx,sy)])
     visited = [[False] * N for _ in range(N)]
 
-    ### 탐색에 문제가 없도록 시작 지점의 값을 0으로 변경
+    # 탐색에 문제가 없도록 시작 지점의 값을 0으로 변경
     board[sx][sy] = 0
     visited[sx][sy] = True
 
     while queue:
-        
-        ### 좌상단의 물고기부터 먹어야하므로 정렬 진행
+        # 좌상단의 물고기부터 먹어야하므로 정렬 진행
         queue = deque(sorted(queue))
-        # print(queue)
 
-        ### 탐색 수행
         for _ in range(len(queue)):
 
             x, y = queue.popleft()
 
-            ### 물고기를 먹음
             if board[x][y] != 0 and board[x][y] < size:
-                
+    
                 board[x][y] = 0
                 eat += 1
 
@@ -53,7 +45,7 @@ def BFS(sx,sy):
                     size += 1
                     eat = 0
 
-                ### 다음 탐색을 위하여 큐와 방문여부 초기화
+                # 다음 탐색을 위하여 큐와 방문여부 초기화
                 queue = deque()
                 visited = [[False] * N for _ in range(N)]
 
@@ -69,25 +61,19 @@ def BFS(sx,sy):
                     queue.append((nx,ny))
                     visited[nx][ny] = True
 
-            ### 조건에 만족하는 물고기를 먹었으므로 다른 방향의 물고기들을 탐색할 필요가 없음
+            # 조건에 만족하는 물고기를 먹었으므로 다른 방향의 물고기들을 탐색할 필요가 없음
             if flag:
                 flag = False
                 break
 
         count += 1
-
         
 if __name__ == '__main__':
-
     N = int(sys.stdin.readline())
     board = [list(map(int, sys.stdin.readline().split())) for _ in range(N)]
-    
+    dx, dy = [-1,0,1,0], [0,-1,0,1]
     answer = 0
 
-    ### 상좌하우
-    dx = [-1,0,1,0]
-    dy = [0,-1,0,1]
-    
     for i in range(N):
         for j in range(N):
             if board[i][j] == 9:
