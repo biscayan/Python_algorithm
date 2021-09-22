@@ -23,7 +23,7 @@
 - [x] Chapter 18. 이진 검색
 - [x] Chapter 19. 비트 조작
 - [x] Chapter 20. 슬라이딩 윈도우
-- [ ] Chapter 21. 그리디 알고리즘
+- [x] Chapter 21. 그리디 알고리즘
 - [ ] Chapter 22. 분할 정복
 - [ ] Chapter 23. 다이나믹 프로그래밍
 - [ ] Appendix A. 회사 및 이직 가이드
