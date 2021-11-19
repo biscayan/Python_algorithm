@@ -3,11 +3,12 @@
 2. Programmers
 3. SW expert academy  
 4. Leetcode
+5. HackerRank
 
 ## Introduction
 네이버, 카카오, 라인, 삼성, sk 등 IT대기업에 취업을 하기 위해서는 반드시 코딩 테스트를 통과하여야 한다.  
 그러기 위해서는 알고리즘 문제들을 풀어보는 것이 필수적이다.  
-백준 온라인 저지 (BOJ), Programmers, SW expert academy, leetcode와 같은 사이트에서 질 좋은 문제들을 제공하고 있다.
+국내에서는 백준 온라인 저지 (BOJ), Programmers, SW expert academy, 해외에서는 Leetcode, HackerRank와 같은 사이트에서 질 좋은 문제들을 제공하고 있다.
 
 따라서 나의 사고력을 증진시키고, 코딩 테스트에 준비하기 위해서 알고리즘 문제들을 풀어보고자 한다.
 알고리즘 문제들은 아래 링크에서 확인을 할 수가 있다.  
@@ -16,6 +17,7 @@
 [Programmers](https://programmers.co.kr/)    
 [SWEA](https://swexpertacademy.com/main/main.do)  
 [Leetcode](https://leetcode.com/)  
+[HackerRank](https://www.hackerrank.com/)  
 
 ## 필요조건
 1. 프로그래밍 언어  
